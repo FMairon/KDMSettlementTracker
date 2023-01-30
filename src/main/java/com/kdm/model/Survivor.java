@@ -2,6 +2,11 @@ package com.kdm.model;
 
 import java.util.List;
 
+import com.kdm.model.enums.CourageAbility;
+import com.kdm.model.enums.Gender;
+import com.kdm.model.enums.UnderstandingAbility;
+import com.kdm.model.enums.WeaponProficiency;
+
 public class Survivor {
 
 	private String name;
@@ -26,6 +31,9 @@ public class Survivor {
 	private List<String> fightingArts;
 	private List<String> disorders;
 	private List<String> abilitiesAndImparements;
+
+	public Survivor() {
+	}
 
 	public String getName() {
 		return name;

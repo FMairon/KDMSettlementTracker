@@ -1,4 +1,4 @@
-package com.kdm.model;
+package com.kdm.model.enums;
 
 public enum CourageAbility {
 	STALWART("Stalwart"), PREPARED("Prepared"), MATCHMAKER("Matchmaker");

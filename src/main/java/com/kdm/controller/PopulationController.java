@@ -1,7 +1,8 @@
 package com.kdm.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.kdm.model.Survivor;
@@ -9,8 +10,17 @@ import com.kdm.model.Survivor;
 @RestController
 public class PopulationController {
 
-	@RequestMapping(value = "/population/addSurvivor", method = RequestMethod.POST)
-	public Survivor addSurvivor(Survivor survivor) {
+	@PostMapping(value = "/population/addNewborn")
+	public Survivor addNewbornSurvivor(Survivor survivor) {
 		return new Survivor();
+	}
+
+	@PostMapping(value = "/population/addSurvivor")
+	public Survivor addExistingSurvivor(Survivor survivor) {
+		return new Survivor();
+	}
+
+	@DeleteMapping(value = "/population/deleteSurvivor")
+	public void deleteSurvivorByName(@RequestParam String name, @RequestParam String familyName) {
 	}
 }

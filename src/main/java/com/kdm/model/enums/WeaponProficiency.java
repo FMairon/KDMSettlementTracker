@@ -1,4 +1,4 @@
-package com.kdm.model;
+package com.kdm.model.enums;
 
 public enum WeaponProficiency {
 	SWORD("Sword");
