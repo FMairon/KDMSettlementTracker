@@ -1,5 +1,6 @@
 package com.kdm.model;
 
+import java.util.LinkedList;
 import java.util.List;
 
 import com.kdm.model.enums.CourageAbility;
@@ -31,8 +32,16 @@ public class Survivor {
 	private List<String> fightingArts;
 	private List<String> disorders;
 	private List<String> abilitiesAndImparements;
+	private boolean rerollAvailable;
 
 	public Survivor() {
+		gender = Gender.UNDEFINED;
+		courageAbility = CourageAbility.NONE;
+		understandingAbility = UnderstandingAbility.NONE;
+		weaponType = WeaponProficiency.NONE;
+		fightingArts = new LinkedList<>();
+		disorders = new LinkedList<>();
+		abilitiesAndImparements = new LinkedList<>();
 	}
 
 	public String getName() {
@@ -209,6 +218,14 @@ public class Survivor {
 
 	public void setAbilitiesAndImparements(List<String> abilitiesAndImparements) {
 		this.abilitiesAndImparements = abilitiesAndImparements;
+	}
+
+	public boolean isRerollAvailable() {
+		return rerollAvailable;
+	}
+
+	public void setRerollAvailable(boolean rerollAvailable) {
+		this.rerollAvailable = rerollAvailable;
 	}
 
 }

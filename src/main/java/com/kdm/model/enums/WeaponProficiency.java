@@ -1,7 +1,7 @@
 package com.kdm.model.enums;
 
 public enum WeaponProficiency {
-	SWORD("Sword");
+	NONE("None");
 
 	private String value;
 

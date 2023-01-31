@@ -2,7 +2,7 @@ package com.kdm.model.enums;
 
 public enum UnderstandingAbility {
 
-	ANALYSE("Analyse"), EXPLORER("Explorer"), TINKER("Tinker");
+	ANALYSE("Analyse"), EXPLORER("Explorer"), TINKER("Tinker"), NONE("None");
 
 	private String value;
 
